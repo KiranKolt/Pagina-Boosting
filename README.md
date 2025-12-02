@@ -1,137 +1,150 @@
-# LoL Boost & Cuentas - Página Web
+# LoL Boost & Cuentas 🎮
 
-Página web profesional para servicios de boosting, coaching y venta de cuentas de League of Legends.
+Página web profesional para servicios de **boosting**, **coaching** y **venta de cuentas** de League of Legends.
 
-## 🚀 Cómo subir a GitHub Pages
+## 🌐 Demo en Vivo
 
-### Opción 1: Desde la interfaz de GitHub (Recomendado para principiantes)
+Visita la página: [https://kirankolt.github.io/Pagina-Boosting/](https://kirankolt.github.io/Pagina-Boosting/)
 
-1. **Crea un repositorio en GitHub:**
-   - Ve a [github.com](https://github.com) e inicia sesión
-   - Haz clic en el botón "+" (arriba a la derecha) y selecciona "New repository"
-   - Nombra tu repositorio (ej: `lol-boost-cuentas`)
-   - Elige si será público o privado
-   - **NO** marques "Initialize this repository with a README" (ya tenemos uno)
-   - Haz clic en "Create repository"
+## 📋 Descripción
 
-2. **Sube tus archivos:**
-   - En la página del repositorio, verás instrucciones
-   - Si es la primera vez, usa estos comandos en tu terminal (desde la carpeta del proyecto):
+Plataforma web moderna y profesional diseñada para ofrecer servicios premium de League of Legends, incluyendo:
 
-```bash
-git init
-git add .
-git commit -m "Initial commit: Página de boosting y venta de cuentas"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-git push -u origin main
-```
+- **Servicios de Boosting:** Ranked Solo/Duo, Flex, Wins Boost y Placement Matches
+- **Coaching Personalizado:** Sesiones de entrenamiento con jugadores profesionales
+- **Venta de Cuentas:** Cuentas verificadas de todos los rangos (Iron a Challenger)
 
-   - Reemplaza `TU_USUARIO` y `TU_REPOSITORIO` con tus datos reales
+## ✨ Características Principales
 
-3. **Activa GitHub Pages:**
-   - Ve a la pestaña **Settings** de tu repositorio
-   - En el menú lateral, busca **Pages**
-   - En "Source", selecciona **main** branch
-   - Haz clic en **Save**
-   - Espera unos minutos y tu página estará disponible en:
-     `https://TU_USUARIO.github.io/TU_REPOSITORIO/`
+### 🎨 Diseño
+- ✅ **Tema oscuro** inspirado en la estética de League of Legends
+- ✅ **Diseño responsive** optimizado para móvil, tablet y desktop
+- ✅ **Animaciones suaves** y transiciones fluidas
+- ✅ **Paleta de colores temática:** Turquesa, dorado y tonos oscuros
 
-### Opción 2: Si ya tienes un repositorio Git
+### 🚀 Funcionalidades
+- ✅ **Navegación suave** entre secciones
+- ✅ **Menú hamburguesa** para dispositivos móviles
+- ✅ **Sistema de filtros** para cuentas (por rango y precio)
+- ✅ **Modal interactivo** con detalles de cuentas
+- ✅ **Formulario de contacto** con validación
+- ✅ **Notificaciones toast** para feedback del usuario
+- ✅ **Efectos hover** y animaciones al hacer scroll
 
-Si ya tienes un repositorio git inicializado, simplemente ejecuta:
+### 📦 Secciones
 
-```bash
-# Agregar todos los archivos
-git add .
-
-# Hacer commit
-git commit -m "Agregar página de boosting y venta de cuentas"
-
-# Subir a GitHub (si ya tienes el remote configurado)
-git push origin main
-
-# Si no tienes el remote, agrégalo primero:
-# git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-# git push -u origin main
-```
-
-Luego activa GitHub Pages desde Settings > Pages en GitHub.
+1. **Hero Section:** Presentación principal con llamadas a la acción
+2. **Boosting:** 4 servicios de boosting con características y precios
+3. **Coaching:** 3 paquetes de coaching (Básico, Premium, Elite)
+4. **Venta de Cuentas:** Galería de cuentas con filtros interactivos
+5. **Contacto:** Formulario funcional y datos de contacto
+6. **Footer:** Información adicional y enlaces
 
 ## 📁 Estructura del Proyecto
 
 ```
-/
-├── index.html          # Página principal
+Pagina-Boosting/
+│
+├── index.html              # Página principal
 ├── css/
-│   └── style.css      # Estilos
+│   └── style.css          # Estilos CSS con variables y responsive
 ├── js/
-│   └── script.js      # Funcionalidad JavaScript
-└── README.md          # Este archivo
+│   └── script.js          # JavaScript para funcionalidad interactiva
+├── .gitignore             # Archivos ignorados por Git
+└── README.md              # Este archivo
 ```
 
-## ✨ Características
+## 🛠️ Tecnologías Utilizadas
 
-- ✅ Diseño responsive (móvil, tablet, desktop)
-- ✅ Tema oscuro estilo League of Legends
-- ✅ Sección de Boosting con 4 servicios
-- ✅ Sección de Coaching con 3 paquetes
-- ✅ Venta de cuentas con filtros interactivos
-- ✅ Formulario de contacto funcional
-- ✅ Navegación suave entre secciones
-- ✅ Animaciones y efectos visuales
+- **HTML5** - Estructura semántica
+- **CSS3** - Estilos modernos con variables CSS, Grid y Flexbox
+- **JavaScript (Vanilla)** - Funcionalidad interactiva sin frameworks
 
 ## 🎨 Personalización
 
-### Cambiar colores
+### Cambiar Colores
+
 Edita las variables CSS en `css/style.css`:
 
 ```css
 :root {
-    --color-primary: #0AC8B9;    /* Color principal */
-    --color-secondary: #C89B3C;  /* Color secundario */
-    --color-gold: #F0E6D2;        /* Color dorado */
-    /* ... más colores ... */
+    --color-primary: #0AC8B9;      /* Turquesa principal */
+    --color-secondary: #C89B3C;    /* Dorado */
+    --color-dark: #0A1428;         /* Fondo oscuro */
+    /* ... más variables ... */
 }
 ```
 
-### Modificar contenido
-- Edita `index.html` para cambiar textos, precios, servicios, etc.
-- Los precios están marcados como `$XX` - reemplázalos con valores reales
+### Modificar Contenido
 
-## 📝 Notas Importantes
+- **Precios:** Busca `$XX` en `index.html` y reemplaza con valores reales
+- **Servicios:** Edita las tarjetas en las secciones correspondientes
+- **Cuentas:** Agrega o modifica las tarjetas de cuentas en la sección `#cuentas`
+- **Información de contacto:** Actualiza email, Discord y horarios
 
-1. **Rutas de archivos:** Asegúrate de que las rutas en `index.html` sean correctas:
-   - `css/style.css`
-   - `js/script.js`
+### Agregar Más Cuentas
 
-2. **GitHub Pages:** La página se actualiza automáticamente cuando haces push a la rama `main`
+Copia y modifica este bloque en `index.html`:
 
-3. **Dominio personalizado:** Si tienes un dominio, puedes configurarlo en Settings > Pages
+```html
+<div class="account-card" data-rank="gold" data-price="low">
+    <div class="account-rank gold">Gold I</div>
+    <div class="account-image">
+        <div class="rank-badge">🥇</div>
+    </div>
+    <div class="account-info">
+        <h3 class="account-title">Cuenta Gold</h3>
+        <div class="account-details">
+            <p><strong>Rango:</strong> Gold I</p>
+            <p><strong>LP:</strong> 95 LP</p>
+            <p><strong>Campeones:</strong> 55+ desbloqueados</p>
+            <p><strong>Skins:</strong> 12+ skins</p>
+            <p><strong>BE:</strong> 8,000</p>
+        </div>
+        <div class="account-price">$45</div>
+        <button class="btn btn-account">Ver Detalles</button>
+    </div>
+</div>
+```
 
-## 🔧 Solución de Problemas
+## 🚀 Despliegue
 
-### La página no carga los estilos
-- Verifica que las rutas en `index.html` sean correctas
-- Asegúrate de que los archivos CSS y JS estén en las carpetas correctas
+La página está desplegada automáticamente en **GitHub Pages**. Cualquier cambio que hagas en la rama `main` se reflejará automáticamente en 1-2 minutos.
 
-### Los cambios no se reflejan
-- GitHub Pages puede tardar 1-5 minutos en actualizar
-- Limpia la caché del navegador (Ctrl+F5 o Cmd+Shift+R)
-- Verifica que hayas hecho push correctamente
+### Actualizar la Página
 
-### Error 404
-- Asegúrate de que el archivo se llame exactamente `index.html`
-- Verifica que esté en la raíz del repositorio o en la carpeta configurada en Pages
+```bash
+git add .
+git commit -m "Descripción de los cambios"
+git push origin main
+```
 
-## 📞 Soporte
+## 📱 Responsive Design
 
-Si tienes problemas, verifica:
-1. Que todos los archivos estén en el repositorio
-2. Que GitHub Pages esté activado en Settings
-3. Que estés usando la rama `main` como fuente
+La página está optimizada para:
+- 📱 **Móviles:** < 768px
+- 📱 **Tablets:** 768px - 1024px
+- 💻 **Desktop:** > 1024px
+
+## 🎯 Próximas Mejoras
+
+- [ ] Integración con sistema de pagos
+- [ ] Panel de administración
+- [ ] Sistema de autenticación de usuarios
+- [ ] Chat en vivo
+- [ ] Integración con API de Riot Games
+- [ ] Sistema de reviews y calificaciones
+
+## 📄 Licencia
+
+Este proyecto es de uso libre para fines educativos y comerciales.
+
+## 👤 Autor
+
+**KiranKolt**
+- GitHub: [@KiranKolt](https://github.com/KiranKolt)
 
 ---
 
-¡Disfruta de tu nueva página web! 🎮
+⭐ Si te gusta este proyecto, dale una estrella en GitHub!
 
