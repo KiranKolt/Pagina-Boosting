@@ -253,13 +253,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #000000 0%, #0A1428 50%, #1a2332 100%);
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(12, 198, 227, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 50% 20%, rgba(12, 198, 227, 0.08) 0%, transparent 60%);
     overflow: hidden;
     margin-top: 70px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/ima1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.4);
+    z-index: 0;
 }
 
 .hero-overlay {
@@ -268,7 +277,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(1, 10, 19, 0.3);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(10, 20, 40, 0.8) 50%, rgba(0, 0, 0, 0.7) 100%);
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(12, 198, 227, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.2) 0%, transparent 50%);
+    z-index: 1;
 }
 
 .hero-content {
@@ -364,6 +377,28 @@ body {
 
 .boosting-section {
     background: var(--color-dark);
+    position: relative;
+}
+
+.boosting-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/ima2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.boosting-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .services-grid {
@@ -450,6 +485,28 @@ body {
 
 .coaching-section {
     background: var(--color-darker);
+    position: relative;
+}
+
+.coaching-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/ima3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.coaching-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .coaching-content {
